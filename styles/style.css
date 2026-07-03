@@ -87,6 +87,21 @@
 
 
 
+.popular-collection{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.rating{
+  align-items: center;
+  gap: 8px;
+}
+
+.rating-star{
+  color: #FB8200;
+}
+
+
 
 
 
