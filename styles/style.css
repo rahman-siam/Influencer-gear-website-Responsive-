@@ -9,6 +9,9 @@
 
 
 /* Shared Styles */
+
+
+
 .display-flex{
   display:flex;
   
@@ -43,7 +46,6 @@
 
 .navbar,.banner{
   justify-content: space-between ;
-  /* max-width: 100%; */
   padding: 1rem 8.5rem;
   align-items: center;
  
@@ -84,14 +86,84 @@
     margin-top: 5rem;
     
 }
+.social-part{
+width: 100%;
+max-width: 1200px;
+margin: 4rem auto;
+}
+
+.social-part > img {
+width: 100%;
+display: block;
+}
+ 
+.social-grp {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  row-gap:20px ;
+  padding: 2rem 0;
+ 
+}
 
 
+/* popular collection style */
+
+.poupular-collection-section{
+width: 100%;
+max-width: 1110px;
+margin: 100px auto
+
+}
+
+.popular-collection-heading{
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 50px;
+
+}
 
 .popular-collection{
   display: grid;
   grid-template-columns: repeat(3,1fr);
+  gap: 30px;
 }
 
+.flex-tripod {
+  background-color: #ffffff;
+  padding: 15px;        
+  border-radius: 10px;  
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08); 
+}
+
+.flex-tripod img {
+  width: 100%;           
+  border-radius: 10px;
+  background-color: #F8F8F8; 
+}
+.flex-tripod h4 {
+  font-size: 20px;
+  color: #18191F;        
+  margin-top: 15px;      
+  margin-bottom: 8px;
+}
+
+
+.flex-tripod h4 + p {    
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.rating + p {           
+  font-size: 14px;
+  color: #787885;        
+  margin-top: 15px;
+  line-height: 1.5;
+}
 .rating{
   align-items: center;
   gap: 8px;
@@ -101,7 +173,25 @@
   color: #FB8200;
 }
 
+.see-more{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  gap: 8px;                  
+  
+  color: #E02C6D;            
+  text-decoration: none;    
+  font-weight: 700;         
+  font-size: 1rem;
+  
+  margin-top: 30px; 
+  margin-right: 60px;      
+        
+}
 
+.see-more:hover {
+  color: #c2185b;            
+}
 
 
 
@@ -166,4 +256,14 @@
     height: auto;
   }
 
+
+  /* popular collection mobile */
+  .popular-collection{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 30px;
+}
+.see-more{
+  margin-right: 0px;
+}
 }
